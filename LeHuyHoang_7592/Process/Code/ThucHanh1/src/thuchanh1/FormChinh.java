@@ -8,10 +8,9 @@ import javax.swing.JOptionPane;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
- * @author 
+ * @author
  */
 public class FormChinh extends javax.swing.JFrame {
 
@@ -107,6 +106,11 @@ public class FormChinh extends javax.swing.JFrame {
 
         jMenuItem2.setForeground(new java.awt.Color(255, 0, 0));
         jMenuItem2.setText("Thoát");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
         jMenu3.add(jMenuItem2);
 
         jMenuBar1.add(jMenu3);
@@ -196,6 +200,13 @@ public class FormChinh extends javax.swing.JFrame {
         FormChiaa frm = new FormChiaa();
         frm.setVisible(true);
     }//GEN-LAST:event_jMenuItem8ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        int option = JOptionPane.showConfirmDialog(this, " bạn có chắc muốn thoát không ");
+        if (option == JOptionPane.YES_OPTION) {
+            System.exit(0);
+        }
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     /**
      * @param args the command line arguments
