@@ -8,10 +8,9 @@ import javax.swing.JOptionPane;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
- * @author 
+ * @author
  */
 public class FormChinh extends javax.swing.JFrame {
 
@@ -46,12 +45,13 @@ public class FormChinh extends javax.swing.JFrame {
         jMenuBar5 = new javax.swing.JMenuBar();
         jMenu9 = new javax.swing.JMenu();
         jMenu10 = new javax.swing.JMenu();
-        jPanel1 = new javax.swing.JPanel();
-        AnhNenn = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        jToggleButton1 = new javax.swing.JToggleButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jEditorPane1 = new javax.swing.JEditorPane();
+        Anh_Nen = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu3 = new javax.swing.JMenu();
-        javax.swing.JMenuItem jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
         jMenu11 = new javax.swing.JMenu();
         jMenuItem5 = new javax.swing.JMenuItem();
         jMenuItem6 = new javax.swing.JMenuItem();
@@ -89,28 +89,22 @@ public class FormChinh extends javax.swing.JFrame {
         jMenu10.setText("Edit");
         jMenuBar5.add(jMenu10);
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setBackground(new java.awt.Color(153, 153, 153));
-        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setForeground(java.awt.Color.lightGray);
-        setPreferredSize(new java.awt.Dimension(972, 450));
+        jToggleButton1.setText("jToggleButton1");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
+        jScrollPane1.setViewportView(jEditorPane1);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hinhnen/chinhh.png"))); // NOI18N
-        jLabel1.setText("jLabel1");
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        Anh_Nen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ThucHanh2/919885f72226ad8e9e4f07aa745dc5eb.jpg"))); // NOI18N
+
+        jMenuBar1.setBackground(new java.awt.Color(51, 51, 51));
+        jMenuBar1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+
+        jMenu3.setBackground(new java.awt.Color(51, 51, 255));
+        jMenu3.setForeground(new java.awt.Color(51, 51, 51));
         jMenu3.setText("Hệ thống");
 
+        jMenuItem2.setForeground(new java.awt.Color(255, 0, 0));
         jMenuItem2.setText("Thoát");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -121,8 +115,10 @@ public class FormChinh extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu3);
 
+        jMenu11.setForeground(new java.awt.Color(51, 51, 51));
         jMenu11.setText("Chức năng");
 
+        jMenuItem5.setForeground(new java.awt.Color(51, 102, 255));
         jMenuItem5.setText("Phép cộng");
         jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -131,6 +127,7 @@ public class FormChinh extends javax.swing.JFrame {
         });
         jMenu11.add(jMenuItem5);
 
+        jMenuItem6.setForeground(new java.awt.Color(204, 204, 0));
         jMenuItem6.setText("Phép trừ");
         jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -139,6 +136,7 @@ public class FormChinh extends javax.swing.JFrame {
         });
         jMenu11.add(jMenuItem6);
 
+        jMenuItem7.setForeground(new java.awt.Color(204, 153, 0));
         jMenuItem7.setText("Phép nhân");
         jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -147,6 +145,7 @@ public class FormChinh extends javax.swing.JFrame {
         });
         jMenu11.add(jMenuItem7);
 
+        jMenuItem8.setForeground(new java.awt.Color(51, 153, 0));
         jMenuItem8.setText("Phép chia");
         jMenuItem8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -157,6 +156,7 @@ public class FormChinh extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu11);
 
+        jMenu12.setForeground(new java.awt.Color(51, 51, 51));
         jMenu12.setText("Trợ giúp");
         jMenuBar1.add(jMenu12);
 
@@ -166,52 +166,44 @@ public class FormChinh extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 606, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(366, 366, 366)
-                .addComponent(AnhNenn, javax.swing.GroupLayout.PREFERRED_SIZE, 0, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(Anh_Nen)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(AnhNenn, javax.swing.GroupLayout.PREFERRED_SIZE, 0, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Anh_Nen)
         );
 
-        setSize(new java.awt.Dimension(621, 313));
+        pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
         // TODO add your handling code here:
-        FormCong frm = new FormCong();
+        FormCongg frm = new FormCongg();
         frm.setVisible(true);
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
         // TODO add your handling code here:
-        FormTru frm = new FormTru();
+        FormTruu frm = new FormTruu();
         frm.setVisible(true);
-        
     }//GEN-LAST:event_jMenuItem6ActionPerformed
 
     private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
         // TODO add your handling code here:
-        FormNhan frm = new FormNhan();
+        FormNhann frm = new FormNhann();
         frm.setVisible(true);
-        
     }//GEN-LAST:event_jMenuItem7ActionPerformed
 
     private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
         // TODO add your handling code here:
-        FormChia frm = new FormChia();
+        FormChiaa frm = new FormChiaa();
         frm.setVisible(true);
-        
     }//GEN-LAST:event_jMenuItem8ActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        // TODO add your handling code here:
-        int option=JOptionPane.showConfirmDialog(this, " bạn có chắc muốn thoát không ");
-        if(option==JOptionPane.YES_OPTION){
+        int option = JOptionPane.showConfirmDialog(this, " bạn có chắc muốn thoát không ");
+        if (option == JOptionPane.YES_OPTION) {
             System.exit(0);
         }
     }//GEN-LAST:event_jMenuItem2ActionPerformed
@@ -252,8 +244,8 @@ public class FormChinh extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel AnhNenn;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel Anh_Nen;
+    private javax.swing.JEditorPane jEditorPane1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu10;
     private javax.swing.JMenu jMenu11;
@@ -271,12 +263,14 @@ public class FormChinh extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar3;
     private javax.swing.JMenuBar jMenuBar4;
     private javax.swing.JMenuBar jMenuBar5;
+    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JMenuItem jMenuItem8;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JToggleButton jToggleButton1;
     // End of variables declaration//GEN-END:variables
 }
