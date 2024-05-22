@@ -202,6 +202,7 @@ public class FormChinh extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem8ActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+<<<<<<< HEAD
 <<<<<<< HEAD:PhamTanQuoc_6085/DO_AN_CA_NHAN/src/thuchanh1/FormChinh.java
         // TODO add your handling code here:
         int option=JOptionPane.showConfirmDialog(this, " bạn có chắc muốn thoát không ");
@@ -210,6 +211,10 @@ public class FormChinh extends javax.swing.JFrame {
         int option = JOptionPane.showConfirmDialog(this, " bạn có chắc muốn thoát không ");
         if (option == JOptionPane.YES_OPTION) {
 >>>>>>> 3bd5fc6e34c900e8bb8d0ba456d6c796e8b79a6e:LeHuyHoang_7592/Đồ Án Cá Nhân/Bai_Ca_Nhan/src/thuchanh1/FormChinh.java
+=======
+        int option = JOptionPane.showConfirmDialog(this, " bạn có chắc muốn thoát không ");
+        if (option == JOptionPane.YES_OPTION) {
+>>>>>>> 3bd5fc6e34c900e8bb8d0ba456d6c796e8b79a6e
             System.exit(0);
         }
     }//GEN-LAST:event_jMenuItem2ActionPerformed
